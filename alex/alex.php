@@ -34,7 +34,7 @@ $config = Zend_Registry::get('config');
 $alexjs = dirname(__FILE__) . '/alex.js';
 $cmd = APPLICATION_PATH . "/../library/phantomjs/bin/$config->phantomjsbin --disk-cache=false $alexjs";
 
-// $out = `$cmd`;
+$out = `$cmd`;
 $tmp = tempnam('/tmp/', 'alex-');
 file_put_contents($tmp, $out);
 

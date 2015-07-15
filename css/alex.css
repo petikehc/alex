@@ -1,6 +1,7 @@
 html, body {
 	background: black;
 	margin: 0;
+	overflow: hidden;
 }
 
 .alex {
@@ -24,4 +25,127 @@ html, body {
 	-webkit-opacity: 1;
 	-moz-opacity: 1;
 	opacity: 1;
+}
+
+
+
+body.chickensoup {
+	background-image: url('../images/alex.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+#alex {
+	display: none;
+}
+#alex.chickensoup {
+	background-image: url('../images/alex.jpg');
+	background-position: center center;
+	background-size: cover;
+	
+	-moz-animation: zoom-soup 10s linear forwards, rotate-soup 10s linear infinite;
+	-ms-animation: zoom-soup 10s linear forwards, rotate-soup 10s linear infinite;
+	-o-animation: zoom-soup 10s linear forwards, rotate-soup 10s linear infinite;
+	-webkit-animation: zoom-soup 10s linear forwards, rotate-soup 10s linear infinite;
+	animation: zoom-soup 10s linear forwards, rotate-soup 10s linear infinite;
+	display: block;
+	position: fixed;
+}
+
+
+@keyframes rotate-soup {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+	}
+@-webkit-keyframes rotate-soup {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes rotate-soup {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-ms-keyframes rotate-soup {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes zoom-soup {
+	from {
+		opacity: 0;
+		width: 0;
+		height: 0;
+		left: 50%;
+		top: 50%;
+	}
+	to {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+@-webkit-keyframes zoom-soup {
+	from {
+		-webkit-opacity: 0;
+		width: 0;
+		height: 0;
+		left: 50%;
+		top: 50%;
+	}
+	to {
+		-webkit-opacity: 1;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}}
+@-moz-keyframes zoom-soup {
+	from {
+		-moz-opacity: 0;
+		width: 0;
+		height: 0;
+		left: 50%;
+		top: 50%;
+	}
+	to {
+		-moz-opacity: 1;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}}
+@-ms-keyframes zoom-soup {
+	from {
+		opacity: 0;
+		width: 0;
+		height: 0;
+		left: 50%;
+		top: 50%;
+	}
+	to {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
 }
