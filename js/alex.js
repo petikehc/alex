@@ -2,7 +2,7 @@
 
 $(function () {
 	
-	$.get('//s3.amazonaws.com/spotify-rewind/alex', function (response) {
+	$.get('//s3.amazonaws.com/alexalexalex/alex', function (response) {
 		
 		var container = $('#container');
 		

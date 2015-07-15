@@ -34,11 +34,12 @@ $config = Zend_Registry::get('config');
 $alexjs = dirname(__FILE__) . '/alex.js';
 $cmd = APPLICATION_PATH . "/../library/phantomjs/bin/$config->phantomjsbin --disk-cache=false $alexjs";
 
-$out = `$cmd`;
+// $out = `$cmd`;
 $tmp = tempnam('/tmp/', 'alex-');
 file_put_contents($tmp, $out);
 
-$s3Url = 'https://s3.amazonaws.com/' . $config->amazon->s3->bucket . '/alex';
+$s3Url = 'https://s3.amazonaws.com/alexalexalex/alex';
 
+$config->amazon->s3->bucket = 'alexalexalex';
 $s3 = new Spotify_Service_Storage_S3($config);
 $s3->copy($tmp, 'alex', 'text/plain');
