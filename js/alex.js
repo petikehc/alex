@@ -19,7 +19,7 @@ $(function () {
 			if (alex6 >= alex7.length) {
 				clearInterval(alex8);
 				$(alex7[ alex6 - 1 ]).removeClass('visible');
-				$('#alex').addClass('chickensoup');
+				$('body, #alex').addClass('chickensoup');
 				var alex9 = 0;
 				setInterval(function () {
 					$(document.body).css('background-image', 'url(' + alex3[ alex9 ]+ ')');
